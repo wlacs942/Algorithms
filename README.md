@@ -7,7 +7,7 @@ Please email: [wlacs942@gmail.com](mailto:wlacs942@gmail.com), please be sure to
 yet have a GitHub account, please get one by going to: [https://github.com/join](https://github.com/join).
 
 ## Website
-The class website is being developed. The URL is: [wlacs942.us](http://wlacs942.us). If you would like to assist with
+The class website is being developed. The URL is: [wlacs942.com](http://wlacs942.com). If you would like to assist with
 development of the website, please email: [wlacs942@gmail.com](mailto:wlacs942@gmail.com). In addition, if you would like to
 collaborate with other students to create a database related to the class, or some other project, please mention that in
 your email as well. 
