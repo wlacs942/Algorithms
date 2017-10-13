@@ -3,8 +3,8 @@ This repository is for students in Professor Yuen's Fall 2017 Discrete Structure
 More instructions are coming soon. The language to be used in the repositories is Java.  
 
 ## Obtain an invitation to the repository 
-Please email:[wlacs942@gmail.com](mailto:wlacs942@gmail.com), please be sure to include your GitHub user name. If you do not
-yet have a GitHub account, please get one by going to:[https://github.com/join](https://github.com/join).
+Please email: [wlacs942@gmail.com](mailto:wlacs942@gmail.com), please be sure to include your GitHub user name. If you do not
+yet have a GitHub account, please get one by going to: [https://github.com/join](https://github.com/join).
 
 ## Website
 The class website is being developed. The URL is: [wlacs942.us](http://wlacs942.us). If you would like to assist with
