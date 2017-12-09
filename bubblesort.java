@@ -29,22 +29,13 @@ public class BubbleSort {
                                  arr[j] = temp;  
 
                          }  
-
-                          
-
                  }  
-
          }  
-
-  
-
-    }  
+ }  
 
     public static void main(String[] args) {  
 
                 int arr[] ={3,60,35,2,45,320,5};  
-
-                 
 
                 System.out.println("Array Before Bubble Sort");  
 
@@ -56,11 +47,7 @@ public class BubbleSort {
 
                 System.out.println();  
 
-                  
-
-                bubbleSort(arr);//sorting array elements using bubble sort  
-
-                 
+                 bubbleSort(arr);//sorting array elements using bubble sort  
 
                 System.out.println("Array After Bubble Sort");  
 
@@ -69,8 +56,6 @@ public class BubbleSort {
                         System.out.print(arr[i] + " ");  
 
                 }  
-
-   
 
         }  
 
