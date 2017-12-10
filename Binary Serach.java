@@ -3,7 +3,7 @@
     Input:   Number of elements:
              element's values:
              value to be searched:
-    Output:Position of the number input by user among other numbers
+    Output:  Position of the number input by user among other numbers
  */
 import java.util.Scanner;
 class BinarySearch
