@@ -1,43 +1,53 @@
-// Java implementation of iterative Binary Search
+/*
+ Program: Binary Search
+    Input:   Number of elements:
+             element's values:
+             value to be searched:
+    Output:Position of the number input by user among other numbers
+ */
+import java.util.Scanner;
 class BinarySearch
 {
-    // Returns index of x if it is present in arr[], else
-    // return -1
-    int binarySearch(int arr[], int x)
-    {
-        int l = 0, r = arr.length - 1;
-        while (l <= r)
-        {
-            int m = l + (r-l)/2;
- 
-            // Check if x is present at mid
-            if (arr[m] == x)
-                return m;
- 
-            // If x greater, ignore left half
-            if (arr[m] < x)
-                l = m + 1;
- 
-            // If x is smaller, ignore right half
-            else
-                r = m - 1;
-        }
- 
-        // if we reach here, then element was not present
-        return -1;
-    }
- 
-    // Driver method to test above
     public static void main(String args[])
     {
-        BinarySearch ob = new BinarySearch();
-        int arr[] = {2, 3, 4, 10, 40};
-        int n = arr.length;
-        int x = 10;
-        int result = ob.binarySearch(arr, x);
-        if (result == -1)
-            System.out.println("Element not present");
-        else
-            System.out.println("Element found at index "+result);
+        int counter, num, item, array[], first, last, middle;
+        
+        //To capture user input
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number of elements:");
+        num = input.nextInt();
+        
+        //Creating array to store the all the numbers
+        array = new int[num];
+        System.out.println("Enter " + num + " integers");
+        
+        //Loop to store each numbers in array
+        for (counter = 0; counter < num; counter++)
+            array[counter] = input.nextInt();
+        
+        System.out.println("Enter the search value:");
+        item = input.nextInt();
+        first = 0;
+        last = num - 1;
+        middle = (first + last)/2;
+        
+        while( first <= last )
+        {
+            if ( array[middle] < item )
+                first = middle + 1;
+            else if ( array[middle] == item )
+            {
+                System.out.println(item + " found at location " + (middle + 1) + ".");
+                break;
+            }
+            else
+            {
+                last = middle - 1;
+            }
+            middle = (first + last)/2;
+        }
+        if ( first > last )
+            System.out.println(item + " is not found.\n");
     }
-}
+}// End of program
+
