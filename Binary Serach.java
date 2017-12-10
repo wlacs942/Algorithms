@@ -1,5 +1,7 @@
 /*
- Program: Binary Search
+* Program: Binary Search
+* This is the program that get some value of elements from the user and then ask
+* which value the user want's to find where is the position.
     Input:   Number of elements:
              element's values:
              value to be searched:
