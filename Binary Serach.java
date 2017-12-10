@@ -1,7 +1,8 @@
 /*
 * Program: Binary Search
+* (Java program for binary search: This code implements binary search algorithm)
 * This is the program that get some value of elements from the user and then ask
-* which value the user want's to find where is the position.
+* which value the user want's to find where is the Position of the number input by user among other numbers.
     Input:   Number of elements:
              element's values:
              value to be searched:
