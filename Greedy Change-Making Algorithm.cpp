@@ -40,7 +40,7 @@ int main()
 	// Loop displays the number of coins per denomination
 	for (int i = 0; i < numDenom; i++)
 	{
-		// Will only dislpay the number of coins if coins are greater than 0
+		// Will only display the number of coins if coins are greater than 0
 		if (numCoins[i] > 0)		
 		{
 			cout << "\n\t " << coinDenom[i] << "-cent coins: "
