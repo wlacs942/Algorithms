@@ -3,7 +3,7 @@ Morris Zieve
 
 WLAC COS 942 16796 Algorithm Implementation
 
-Heap Sort Algorthim
+Heap Sort Algorithm
 
 A sorting algorithm that works by first organizing the data to be sorted into a special type of binary tree called a heap. The heap itself has, by definition, the largest value at the top of the tree, so the heap sort algorithm must also reverse the order. It does this with the following steps:
 
