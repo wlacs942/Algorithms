@@ -1,0 +1,23 @@
+   To multiply two numbers by doubling and halving:
+1st:	Place each number at the top of one of two side-by-side columns. One column's entries are doubled and the others are divided by two. To shorten the computation and format the problem as shown in these examples, put the smaller number at the top of the left column and use dividing to produce other entries in that column as directed below.
+	
+2nd:	Create entries in the left column by halving the number in the row above it and discarding the remainder. Stop at 1 or 0.
+	
+3rd:	Create entries in the right column by doubling the number in the row above it. Stop when you have matched all the rows of the left column. Note: Rather than double the number to obtain the next number, reference and internet sources use the phrase "add it to itself" to get the next number.
+	
+4th:	Use the odd numbers in the left column to identify which matching numbers in the right column to add.
+	
+5th:	Add the "doubles" in the right column which match the identified powers of two from the left column.
+	
+6th:	The sum is the desired product.
+
+Pseudocode:
+function egyptianDivisino(left, right)
+Prod := 0
+While (left > 0)
+	If (left is odd)
+		Prod := prod + right
+	left := halve(left)
+	right := double(right)
+return prod
+	
