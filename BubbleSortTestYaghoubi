@@ -1,0 +1,38 @@
+import java.util.Random;
+
+/**
+    This program tests the bubbSort method in the
+    BubbleSorter class.
+ */
+
+public class BubbleSortTest {
+
+	public static void main(String[] args) {
+			
+		
+		// an array with test values
+		//int[] values = {1,6,3,8,5,32,2}; 
+		
+		// code below creates an array of size 15 populated by randomly selected numbers
+		Random r = new Random();
+		int[] values = new int[15];
+		for(int i =0; i <values.length; i++)
+		{
+			values[i] = r.nextInt(15);
+			// System.out.print(ar1[i] + " ");
+		}
+		
+		System.out.println("Orginal order: ");
+		for(int element: values)
+			System.out.print(element +" ");
+		
+		// Sorting the array 
+		BubbleSorter.bubbSort(values);
+		System.out.println("\nSorted order: ");
+		
+		for(int element : values)
+			System.out.print(element + " ");
+		
+	}
+
+}
