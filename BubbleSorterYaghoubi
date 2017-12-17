@@ -1,0 +1,37 @@
+/**
+ * 
+ * @author ramonayag
+ * The bubble sorter class provides a method for bubble sorting 
+ *
+ */
+
+public class BubbleSorter {
+
+	public static void bubbSort(int[] array) {
+	
+		// last position of the last element in array
+		int lastElement; 
+		int index; 
+		int swap; 
+		
+		
+		for(lastElement = array.length - 1; lastElement >= 0; lastElement-- )
+		{
+		
+			for(index = 0; index <= lastElement - 1; index++)
+			{
+				// Compare neighbors of elements in the array using nested loop
+				if(array[index] > array[index + 1])
+				{
+					// swapping elements 
+					swap = array[index]; 
+					array[index] = array[index+1]; 
+					array[index + 1] = swap; 
+				}
+			}
+			
+		}
+	
+	}
+
+}
