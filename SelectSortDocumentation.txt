@@ -1,0 +1,28 @@
+SIMPLE ENGLISH
+SELECT SORT
+-Find the smallest card. Swap it with the first card.
+-Finding the index of the current minimum element in a subarray
+-Find the second-smallest card. Swap it with the second card.
+-Find the third-smallest card. Swap it with the third card.
+-Repeat finding the next-smallest card, and swapping it into the 
+correct position until the array is sorted.
+
+PSEUDOCODE:
+INPUT: An array A[1..n] of n elements
+OUTPUT: A[1..n] sorted in descending order
+
+steps:
+1. funtcion selectsort (A,n) 
+2.    for i to 1 to (n-1) do 
+3.       min<--i
+4.         for j=i+1 to n do
+5.	      if A[j]<A[min] then
+6.	         min<--j
+7.            end if
+8.            if min does not equal i then swap A[i], A[min]
+9.         end for
+10.    end for
+11. end function
+8. end for
+
+
