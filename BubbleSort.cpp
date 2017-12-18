@@ -19,13 +19,13 @@ int main()
     
     //Starts sort
     sort(nums, size);
-
-	  //Prints Sorted Array of nums[]
-	  for (int i = 0; i < size; i++)
-	    {
-		    if (i < (size - 1))
-			      cout << nums[i] << " \n";
-	    } cout << endl;
+  
+    //Prints Sorted Array of nums[]
+    for (int i = 0; i < size; i++)
+    {
+      if (i < (size - 1))
+        cout << nums[i] << " \n";
+    } cout << endl;
 
 	  //Return Success
 	  system("pause");
