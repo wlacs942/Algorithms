@@ -1,0 +1,42 @@
+The algorithm that I chose to implement is the matrix multiplication algorithm, which is in chapter 3.3, on page 
+222. One of the reasons that I selected this algorithm is that we studied matrix multiplication in chapter 2.6, 
+and I wanted to learn how to code the answer to the problem. Since I do not know Java, I used C++. 
+
+A matrix is defined in Chapter 2.6, on page 178, in definition 2. Likewise, matrix multiplication is defined on 
+page 179, in definition 4, as:
+
+> Let A be an m x k matrix and B be a k x n matrix. The product of A and B, denoted by AB, is the m x n matrix 
+with its (i, j)th (<sup>th</sup>) entry equal to the sum of the products of the corresponding  elements from the 
+ith row of A and the jth column of B. In other words, if AB = [cij], then cij =aI1bIJ + ai2b2j + … + aikbkj
+
+The algorithm in the book is iterative, with nested loops. As a result, the algorithm has a polynomial runtime 
+complexity of  (n3). Generally speaking, nested loops are inefficient. The pseudocode in the book is:
+> procedure matrix multiplication(A, B: matrices)
+for i := 1 to m 
+for j:= 1 to n
+cij := 0
+for q := 1 to k
+cij := cij + aiqbqj
+return C {C = [cij] is the product of A and B	
+
+The variables in the pseudocode match up with the variables in the definition, with the exception of q, which 
+represents the second digit in the index for both matrices upon which the multiplication is performed at any given 
+step. 
+
+The order of operations for the algorithm as I have implemented it is as follows:
+-	Initialize all variables and arrays
+-	Obtain the number of rows and columns for each matrix
+-	Verify that the number of columns in the first matrix (A) match the number of rows in the second matrix (B), 
+if not, ask user to re-enter the dimensions of both matrices
+-	Input two matrices: A (m x k) and B (k x n)
+-	First for loop i, which is the number of rows in A, 1 to L (the first entry is at index 0)
+-	Second for loop j, which is the number of columns in B, 1 to n (the first entry is at index 0)
+-	Set the result matrix C, at c(i, j) to 0
+-	Third for loop q, which is the number of columns in A (which is the same as the number of rows in B), 1 to m (
+the first entry is at index 0)
+-	Perform the math: set the result for the current position in C to the sum of the current value of C and the 
+product of matrix A at [i][k] and matrix B at [k][j]; keep looping successively until the entire result, matrix C, 
+is determined. (It will do the first row of C from left to right, then the second row of C from left to right, and 
+continue until finished in this order).
+-	Display the result, matrix C 
+
