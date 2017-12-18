@@ -43,20 +43,20 @@ void sort(int values[], int s)
   int holder;  //value holder when when swapping arrays elements
   
   do //Sort
-	{
-    //initialize counter here to allow loop entrance
-    counter = 0; //resets to 0 when condition fails to exit loop
+   {
+      //initialize counter here to allow loop entrance
+      counter = 0; //resets to 0 when condition fails to exit loop
     
-    //start sort loop
-    for (int i = 0; i < (s - 1); i++)
-    {
-      if (values[i] > values[i + 1])
-      {                               
-        holder = values[i];         //////////
-        values[i] = values[i + 1];  //Swapping
-        values[i + 1] = holder;     //////////
-        counter++;                  //prevents loop exit if two elements are swapped
+      //start sort loop
+      for (int i = 0; i < (s - 1); i++)
+      {
+        if (values[i] > values[i + 1])
+        {                               
+          holder = values[i];         //////////
+          values[i] = values[i + 1];  //Swapping
+          values[i + 1] = holder;     //////////
+          counter++;                  //prevents loop exit if two elements are swapped
+        }
       }
-    }
-  } while (counter != 0); //condition required to exit loop
+    } while (counter != 0); //condition required to exit loop
 }
