@@ -9,7 +9,6 @@ using namespace std;
 
 //prototypes
 void sort(int values[], int m);
-bool search(int value, int values[], int m);
 
 int main()
 {
