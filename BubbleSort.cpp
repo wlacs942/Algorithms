@@ -44,7 +44,7 @@ void sort(int values[], int s)
 
 	do //Sort
 	{
-		//initialize counter here to allow loop entrance
+	//initialize counter here to allow loop entrance
 		counter = 0; //resets to 0 when condition fails to exit loop
 
 		//start sort loop
