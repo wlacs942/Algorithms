@@ -16,9 +16,9 @@ int main()
     //Declorations
     int nums[] = {41, 39, 43, 40, 52, 63, 88, 32, 54, 66, 12, 16, 5, 8}; //array of integers(int size must equal the amount of elements)
     int size = 14; //Size of array (needs to be adjusted whenever the number of elements in array nums[] is changed)
-	
-	  //Starts sort
-	  sort(nums, size);
+    
+    //Starts sort
+    sort(nums, size);
 
 	  //Prints Sorted Array of nums[]
 	  for (int i = 0; i < size; i++)
