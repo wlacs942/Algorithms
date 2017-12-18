@@ -1,0 +1,18 @@
++Simple English
+Private sort
+Quantum algorithm
++Finding unique input of black box function for production of particular output value.
+Devised in 1996.
++steps
++1. |s} equates uniform supersition denominaton 
++2. U with I - 2|w}{w|
++3. Householder transformation of (I = 2|w}{w|}{w} = |w} - 2|w}{w|w} = - |w} = Uw|W}
++4. Householder transformation of (I = 2|w}{w|}{w} = {x} - 2|w}{w|x} = |x} = Uw|x}
++5. Initialize system to state of |s}
++6. Grover interation performance r(n) times.
++7. Application of operator Uw.
++8. Application of operator Us.
++9. Application of measurement Ω.
++10. end of function.
++
++
