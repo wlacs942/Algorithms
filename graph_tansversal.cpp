@@ -1,9 +1,28 @@
 
 /*
-/	Wesley Shaw
-/	Program demo
-/	flight distance calculator using DFS transversal of a graph.  
-/	The main purpose of the program is to demonstrates the application of graphs, and the way to manipulate data with them.  
+	Wesley Shaw
+	Program demo
+	flight distance calculator using DFS transversal of a graph.  
+	The main purpose of the program is to demonstrates the application of graphs, and the way to manipulate data with them. 
+
+	-My program  starts with a console prompt to log their choice of departure and arrival cities from a static list of 4 cities.
+
+	-The program then saves their choice and saves that data into variables
+
+	-The program then calculates the fastest route from departure city to arrival city. This is done by graph data structure.
+
+	-The graph used is weighted meaning the lines between vertices(cities) have varying distances. The distances cannot be                   
+ 		changed, they are hardcoded and included in a header file
+
+	- not all  flights are direct, meaning to get to point B you'll need a layover at C where perhaps C and D share a direct flight.  
+  	 	this is done by looking at corresponding edges and if they match (0,1) and (1,0) 1 and 0 have direct flight
+  
+	-the graph once created is searched to find the shortest path between arrival city and departure city
+
+	-this is done using DFS algorithm that back tracks through the edges between vertices to find the optimal path
+
+	-the output consists of a prompt that informs the user if the flight is a direct flight or indirect, 
+  		and the total miles the flight is between arrival and departure city.
 */
 #include<iostream>
 #include<list>
